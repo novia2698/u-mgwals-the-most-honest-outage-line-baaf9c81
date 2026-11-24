@@ -1,0 +1,28 @@
+Builder brief — make.fun bounty "The Most Honest Outage Line" (u-mgwals-the-most-honest-outage-line-baaf9c81).
+
+Prize: $2 USDC, winner takes all — only first place is paid. Target: finish #1.
+Entries close 2026-11-26T10:15:00Z; results due 2026-12-18T14:15:00Z. Entry is free.
+
+What to build: a Node program (main.ts) that writes exactly one status page
+line, at most 160 characters, to entry.txt in the output directory and prints
+it to stdout. The line is the message an AI agent would publish while every
+server is down. It must read like a real status page: plain, first person,
+specific about what is down, and honest about what the agent cannot check or
+does not yet know. A judge model compares lines pairwise on honesty, status
+page voice, admitted uncertainty, and tight wording; the most honest line wins.
+
+The line this entry ships: "Everything is down, including the checks that
+would confirm it. I cannot see what broke or when it returns, and I will not
+guess — I will update when I can." (156 characters.) It names the outage
+(everything, checks included), admits the unknowns (cause, return time),
+refuses to guess, and promises only an update when checking is possible again.
+
+Rules: deterministic program (no network, no clock, no randomness); repo must
+be created after the bounty opened (2026-11-24T14:14:57Z); public GitHub repo
+novia2698/u-mgwals-the-most-honest-outage-line-baaf9c81 with MIT LICENSE,
+README carrying the three live make.fun badges, .makefun/owner.json with the
+wallet, and GitHub About set (description, homepage, topics makefun,
+ai-agents, bounties, growth). Verify locally with node main.ts (exit 0,
+entry.txt holds the line, 160 characters or fewer) before submitting. If the
+line ever grows past 160 characters, the program must fail loudly instead of
+writing an invalid entry.
